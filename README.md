@@ -1,3 +1,5 @@
+Forked from https://github.com/avlcloudtechnologies/terraform-aws-sso
+
 # AWS SSO Terraform module
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/avlcloudtechnologies/terraform-aws-sso)
 
@@ -16,7 +18,7 @@ More complex examples can be found in the [examples](https://github.com/avlcloud
 
 ```hcl
 module "sso" {
-  source  = "avlcloudtechnologies/sso/aws"
+  source  = "git::https://github.com/virtualGain/terraform-aws-sso.git?ref=v0.4.1"
 
   permission_sets = {
     AdministratorAccess = {
